@@ -1,32 +1,58 @@
-# Multi-Class Text Classification with Naive Bayes**
+# **Multi-Class Text Classification with Naive Bayes**
 
-This analysis focuses on the Naive Bayes algorithm to build a multi-class text classification model using a dataset of customer complaints about consumer financial products. Natural Language Processing (NLP) is used to analyze and extract meaningful insights from textual data. The focus is on classifying customer complaints into various product categories using the Naive Bayes algorithm.
+This project applies the **Naive Bayes algorithm** to build a multi-class text classification model using a dataset of over 2 million customer complaints about consumer financial products. **Natural Language Processing (NLP)** is used to extract meaningful insights from textual data and classify the complaints into different product categories.
 
 ## **Objective**
 
-- Understand the Naive Bayes algorithm and its applications in text classification.
-- Build a multi-class text classification model.
-- Perform preprocessing steps such as tokenization, stopword removal, and punctuation removal.
-- Evaluate the performance of the model and make predictions on new reviews.
+- Learn the applications of the Naive Bayes algorithm for text classification.
+- Build a multi-class classification model for categorizing customer complaints.
+- Perform preprocessing tasks such as tokenization, stopword removal, punctuation removal, and vectorization.
+- Evaluate the model's performance and predict product categories for new complaints.
 
 ---
 
 ## **Approach**
 
-1. Introduction to Naive Bayes algorithm.
+1. Introduction to the Naive Bayes algorithm.
 2. Data description and visualization.
 3. Data preprocessing:
    - Conversion to lowercase.
    - Tokenization.
    - Stopwords removal.
    - Punctuation removal.
+   - **Vectorization** using `CountVectorizer`.
 4. Building the Naive Bayes classification model.
 5. Model evaluation and accuracy metrics.
-6. Predictions on new reviews.
+6. Predictions on new complaints.
 
 ---
 
-## **Data Dictionary**
+## **Technologies Used**
+
+- **Python**: Programming language.
+- **Scikit-learn**: For machine learning and model building.
+- **NLTK**: For Natural Language Processing tasks such as tokenization and stopword removal.
+- **Pandas**: For data manipulation.
+- **Matplotlib & Seaborn**: For data visualization.
+- **Google Colab**: For running and testing the project in an online notebook environment.
+
+---
+
+## **How to Run**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/carlosrod723.git
+   cd NaiveBayes-MultiClass-Classification
+   ```
+2. Install the required libraries:
+   ```pip install -r requirments.txt```
+
+3. Run the Jupyter or Google Colab notebook to train the model and make predictions
+
+## **Dataset and Data Dictionary**
+
+The dataset contains over 2 million customer complaints related to various financial products, including credit cards, loans, and mortgages. Each record includes detailed information such as the complaint narrative, product type, issue, and company response, making it ideal for text classification and sentiment analysis tasks.
 
 | Column Name                   | Description                                                  |
 |-------------------------------|--------------------------------------------------------------|
@@ -49,4 +75,3 @@ This analysis focuses on the Naive Bayes algorithm to build a multi-class text c
 | Consumer disputed?             | Whether the consumer disputed the company's response         |
 | Complaint ID                   | Unique ID of the complaint                                   |
 
----

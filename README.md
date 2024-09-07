@@ -54,6 +54,8 @@ This project applies the **Naive Bayes algorithm** to build a multi-class text c
 
 The dataset contains over 2 million customer complaints related to various financial products, including credit cards, loans, and mortgages. Each record includes detailed information such as the complaint narrative, product type, issue, and company response, making it ideal for text classification and sentiment analysis tasks.
 
+The dataset is available for download here. https://www.kaggle.com/datasets/carlosrodacosta/complaints
+
 | Column Name                   | Description                                                  |
 |-------------------------------|--------------------------------------------------------------|
 | Date received                  | The date the complaint was received                          |
